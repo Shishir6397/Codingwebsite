@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>We solve digital problems with an outstanding creative flare</h1>
+            <h6>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</h6>
+
+        </div>
+        <div class="right">
+            <div class="form">
+                <div class="top">
+                    <div class="signup">
+                        <button class="signup" id="sign">SIGN UP</button>
+                    </div>
+                    <div class="login">
+                        <button class="login" id="log">LOGIN</button>
+                    </div>
+    
+                </div>
+                <div class="bottom">
+                    <input type="text" placeholder="Your email" class="buttons">
+                    <input type="password" placeholder="Your password" class="buttons">
+                    <button class="buttons">Create an Account</button>
+                    <button class="buttons">Login via Twitter</button>
+    
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+<script>
+    const signin_button = document.getElementById("sign");
+    console.log(signin_button);
+    const login_button = document.getElementById("log");
+
+    function handleSignup(){
+        console.log("signup");
+    }
+    const handleLogin = ()=>{
+        console.log("login");
+    }
+    signin_button.addEventListener("click",handleSignup);
+    login_button.addEventListener("click",handleLogin);
+</script>
+</html>
