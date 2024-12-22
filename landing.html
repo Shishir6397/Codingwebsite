@@ -17,16 +17,42 @@
         <div class="bottom">
             <h3>Startup 3</h3>
             <h1>Forget About Code</h1>
-            <p>Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There <span>are no limits and absolutely no coding.</span></p>
+            <p id="content">Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There are no limits and absolutely no coding.</p>
             <div class="dot">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button data-index="0"></button>
+                <button data-index="1"></button>
+                <button data-index="2"></button>
+                <button data-index="3"></button>
+                <button data-index="4"></button>
             </div>
             <button>Create an Account</button>
         </div>
     </div>
 </body>
+<script>
+     const contentArray = [
+            "Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There are no limits and absolutely no coding.",
+            "Design your website faster than ever with our professional blocks. No need to struggle with design decisions.",
+            "Enjoy the flexibility to modify every single detail without worrying about breaking the design.",
+            "Our tools provide a perfect balance of simplicity and power for building your projects.",
+            "With Startup Framework, you can focus on creativity and leave the technicalities to us."
+        ];
+
+        // Get all buttons and the paragraph element
+        const buttons = document.querySelectorAll(".dot button");
+        const content = document.getElementById("content");
+
+        // Add click event listeners to buttons
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                // Update the content of the paragraph
+                content.innerHTML = contentArray[index];
+
+                // Update the active button styling
+                buttons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+            });
+        });
+
+</script>
 </html>
