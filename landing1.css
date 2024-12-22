@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+}
+.top {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  /* width: 50%; */
+  width: 100%;
+  height: 30%;
+  flex-direction: row;
+}
+.top button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 70%;
+  color: white;
+  /* width: 100%; */
+}
+.bottom h3 {
+  font-size: 20px;
+}
+.bottom h1 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+.bottom p {
+  width: 40%;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottom span {
+  align-items: center;
+}
+.bottom button {
+  height: 50px;
+  border-radius: 40px;
+  width: 15%;
+  background-color: blue;
+  color: white;
+  margin-top: 50px;
+}
+.dot {
+  padding: 10px;
+  margin: 10px;
+}
+.dot button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  gap: 20px;
+  transition: background-color 0.3s ease;
+  opacity: 0.5;
+  border: 1px solid white;
+}
+.dot button:hover {
+  background-color: white;
+}
