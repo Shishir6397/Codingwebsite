@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main h4 {
+}
+.main h1 {
+  font-size: 50px;
+  width: 50%;
+  margin: 50px;
+}
+.main p {
+  text-align: center;
+  width: 50%;
+}
