@@ -16,6 +16,12 @@
 }
 .left {
   width: 35%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.left img {
+  width: 450px;
 }
 .right {
   width: 65%;
@@ -94,4 +100,7 @@
 .left1 p,
 .right1 p {
   font-size: 20px;
+}
+.two button:hover {
+  background-color: white;
 }
