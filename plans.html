@@ -15,53 +15,99 @@
         </div>
         <div class="bottom">
             <div class="content">
-                <h3>Starter</h3>
-                <h1 class="price">9.99$</h1>
-                <p>2GB of space</p>
-                <p>14 days of backups</p>
-                <p>Social integrations</p>
-                <p>Client billing</p>
-                <p>Remote access</p>
-                <p>Custom domain</p>
-                <p>24 hours support</p>
-                <p>Admin tools</p>
-                <p>Collaboration tools</p>
-                <p>User management</p>
-                <button class="transparent">Get Started</button>
+                
+                <div class="one">
+                    
+
+                </div>
+                <div class="two">
+                    <h3 class="gap">Starter</h3>
+                <h1 class="price" id="gap">9.99$</h1>
+                    <p><img src="images/Check Icon.png">2GB of space</p>
+                <p><img src="images/Check Icon.png">14 days of backups</p>
+                <p><img src="images/Check Icon.png">Social integrations</p>
+                <p><img src="images/Check Icon.png">Client billing</p>
+                <p class="gap">Remote access</p>
+                <p class="gap">Custom domain</p>
+                <p class="gap">24 hours support</p>
+                <p class="gap">Admin tools</p>
+                <p class="gap">Collaboration tools</p>
+                <p class="gap">User management</p>
+                </div>
+                
+                <button class="transparent" id="btn1">Get Started</button>
 
             </div>
             <div class="content">
-                <h3>Professional</h3>
-                <h1 class="price">19.99$</h1>
-                <p>2GB of space</p>
-                <p>14 days of backups</p>
-                <p>Social integrations</p>
-                <p>Client billing</p>
-                <p>Remote access</p>
-                <p>Custom domain</p>
-                <p>24 hours support</p>
-                <p>Admin tools</p>
-                <p>Collaboration tools</p>
-                <p>User management</p>
-                <button class="pink">Get Started</button>
+                <div class="three">
+
+                </div>
+                <div class="four">
+                    <h3 class="gap">Professional</h3>
+                <h1 class="price" id="gap">19.99$</h1>
+                <p><img src="images/Check Icon.png">2GB of space</p>
+                <p><img src="images/Check Icon.png">14 days of backups</p>
+                <p><img src="images/Check Icon.png">Social integrations</p>
+                <p><img src="images/Check Icon.png">Client billing</p>
+                <p><img src="images/Check Icon.png">Remote access</p>
+                <p><img src="images/Check Icon.png">Custom domain</p>
+                <p><img src="images/Check Icon.png">24 hours support</p>
+                <p class="gap">Admin tools</p>
+                <p class="gap">Collaboration tools</p>
+                <p class="gap">User management</p>
+
+                </div>
+                
+                <button class="pink" id="btn2">Get Started</button>
             </div>
             <div class="content">
-                <h3>Team</h3>
-                <h1 class="price">49.99$</h1>
-                <p>2GB of space</p>
-                <p>14 days of backups</p>
-                <p>Social integrations</p>
-                <p>Client billing</p>
-                <p>Remote access</p>
-                <p>Custom domain</p>
-                <p>24 hours support</p>
-                <p>Admin tools</p>
-                <p>Collaboration tools</p>
-                <p>User management</p>
-                <button class="transparent">Get Started</button>
+                <div class="five">
+
+                </div>
+                <div class="six">
+                    <h3 id="gap">Team</h3>
+                <h1 class="price" id="gap">49.99$</h1>
+                <p><img src="images/Check Icon.png">2GB of space</p>
+                <p><img src="images/Check Icon.png">14 days of backups</p>
+                <p><img src="images/Check Icon.png">Social integrations</p>
+                <p><img src="images/Check Icon.png">Client billing</p>
+                <p><img src="images/Check Icon.png">Remote access</p>
+                <p><img src="images/Check Icon.png">Custom domain</p>
+                <p><img src="images/Check Icon.png">24 hours support</p>
+                <p><img src="images/Check Icon.png">Admin tools</p>
+                <p><img src="images/Check Icon.png">Collaboration tools</p>
+                <p><img src="images/Check Icon.png">User management</p>
+
+                </div>
+                
+                <button class="transparent" id="btn3">Get Started</button>
             </div>
     
         </div>
     </div>
 </body>
+<script>
+    const button1 = document.getElementById("btn1");
+    const button2 = document.getElementById("btn2");
+    const button3 = document.getElementById("btn3");
+
+    button1.addEventListener("click",()=>{
+        button1.style.backgroundColor = "#e93a7d";
+        button2.style.backgroundColor = "inherit";
+        button3.style.backgroundColor = "inherit";
+
+    })
+    button2.addEventListener("click",()=>{
+        button2.style.backgroundColor = "#e93a7d";
+        button1.style.backgroundColor = "inherit";
+        button3.style.backgroundColor = "inherit";
+
+    })
+    button3.addEventListener("click",()=>{
+        button3.style.backgroundColor = "#e93a7d";
+        button2.style.backgroundColor = "inherit";
+        button1.style.backgroundColor = "inherit";
+
+    })
+</script>
 </html>
